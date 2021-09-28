@@ -1,0 +1,45 @@
+<!-- Ramon Mata
+	 CSC 196W Week 4 Assignment
+	 This website will display a text box with different buttons that will
+	 change the textbox when pressed.-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fancify Shamcify</title>
+
+		<!-- link to your script file here -->
+		<script src="index.js"></script>
+		
+	</head>
+
+	<body>
+		<h1>Fancify my Text</h1>
+
+		<!-- Your UI controls go here -->
+		<!--This fieldset contains the Textbox that will be changed by the buttons-->
+		<fieldset>
+			<label for="Text"></label>
+			<textarea id="Text" name="Text" rows="4" cols="50" style="font-size: 12pt">Hello World.</textarea>
+		</fieldset>
+		<fieldset>
+			
+			<label for="Fancify">Fancify</label>
+			<br>
+			<!--Bigger button will increase the font size of the textbox to 24pt-->
+			<button type="button" onclick="getBigger()">Bigger!</button>
+			<br>
+			<!--Fancify button will change the Textbox when clicked-->
+			<input type="radio" id="FancyShmancy" name="drone" value="FancyShmancy" onchange="getFancy()">
+			<label for="FancyShmancy">FancyShmancy</label>
+			<br>
+			<!--Boring button will change the Textbox to its orinigal form-->
+			<input type="radio" id="BoringBetty" name="drone" value="BoringBetty" onchange="getBoring()">
+			<label for="BoringBetty">BoringBetty</label>
+		</fieldset>
+		<fieldset>
+			<!--Moo button will change all text in the textbox to uppercase and append a -Moo to the end of the sentence-->
+			<label for="Moo"></label>
+			<button type="button" onclick="getMoo()">Moo</button>
+		</fieldset>
+	</body>
+</html>
